@@ -14,5 +14,13 @@ export class createContactDto {
 
   @IsString()
   @IsNotEmpty()
+  preferedMethod: string;
+
+  @IsString()
+  @IsNotEmpty()
+  subject: string;
+
+  @IsString()
+  @IsNotEmpty()
   message: string;
 }

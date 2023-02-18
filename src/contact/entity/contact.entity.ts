@@ -22,8 +22,12 @@ export class Contact {
   phoneNumber: string;
 
   @Column()
+  preferedMethod: string;
+  @Column()
+  subject: string;
+  
+  @Column()
   message: string;
-
   @CreateDateColumn()
   createdAt: Date;
 
